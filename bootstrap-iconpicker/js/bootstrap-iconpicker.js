@@ -45,7 +45,7 @@
         glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,        
         mapicon: $.iconset_mapicon || Iconpicker.ICONSET_EMPTY,
         materialdesign: $.iconset_materialdesign || Iconpicker.ICONSET_EMPTY,
-        materialdesign_2: $.iconset_materialdesign_2 || Iconpicker.ICONSET_EMPTY,
+        materialicons: $.iconset_materialicons || Iconpicker.ICONSET_EMPTY,
         octicon: $.iconset_octicon || Iconpicker.ICONSET_EMPTY,
         typicon: $.iconset_typicon || Iconpicker.ICONSET_EMPTY,
         weathericon: $.iconset_weathericon || Iconpicker.ICONSET_EMPTY
@@ -145,7 +145,7 @@
             op.icon = icon;
             if(op.inline === false){
                 el.find('input').val(icon);
-                if (op.iconset == 'materialdesign_2') {
+                if (op.iconset == 'materialicons') {
                     el.find('i').attr('class', '').addClass(op.iconClass).html(icon);
                 } else {
                     el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
@@ -226,7 +226,7 @@
                 var btn = $('<button class="btn ' + op.unselectedClass + ' btn-icon"></button>').hide();
                 if (pos < op.icons.length) {
                     var v = op.iconClassFix + op.icons[pos];
-                    if (op.iconset == 'materialdesign_2') {
+                    if (op.iconset == 'materialicons') {
                         btn.val(v).attr('title', v).append('<i class="' + op.iconClass + '">' + v + '</i>').show();
                     } else {
                         btn.val(v).attr('title', v).append('<i class="' + op.iconClass + ' ' + v + '"></i>').show();
