@@ -22,7 +22,7 @@
 
 ;(function($){
 
-    $.iconset_materialdesign_2 = {
+    $.iconset_materialicons = {
         iconClass: 'material-icons',
         iconClassFix: '',
         icons: [
